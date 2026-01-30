@@ -13,7 +13,7 @@ const db = new pg.Pool({
 })
 
 app.get('/', (req, res) => {
-    res.send('Hell')
+    res.send('Hello')
 })
 
 app.get('/messages', async (req, res) => {
