@@ -43,7 +43,7 @@ async function handleSubmit(event) {
   const userInput = Object.fromEntries(formData)
   const userInputJSON = JSON.stringify(userInput)
 
-  const response = await fetch(`http://localhost:4242/messages`, {
+  const response = await fetch(`${baseURL}/messages`, {
     headers: {
       "Content-Type" : "application/json"
     },
