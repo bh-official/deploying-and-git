@@ -3,10 +3,11 @@
 
 const display = document.getElementById('app')
 const form = document.getElementById('form')
+const baseURL = 'https://deploying-and-git-server-2kxl.onrender.com'
 
 
 async function fetchData() {
-  const response = await fetch(`http://localhost:4242/messages`)
+  const response = await fetch(`${baseURL}/messages`)
   const messages = await response.json()
 
   console.log(messages)
